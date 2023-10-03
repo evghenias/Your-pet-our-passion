@@ -1,0 +1,52 @@
+$mainColor: #CD5B25;
+
+@mixin mainLogo {
+    font-family: K2D;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left; 
+    color: rgb(16, 15, 15);   
+}
+
+@mixin ordinaryText {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 34px;
+    color: #000000;
+}
+
+@mixin mainText {
+    font-family: K2D;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $mainColor;    
+}
+
+@mixin h1 {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 113.682px;
+    line-height: 148px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@mixin button {
+    box-sizing: border-box;
+    width: 280px;
+    height: 78px;
+    left: 177px;
+    top: 640px;
+    border: 2px solid #CD5B25;
+    border-radius: 10px;
+}
