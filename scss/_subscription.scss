@@ -1,0 +1,223 @@
+
+/* ====================================================================================== section subscription ========================================================================*/
+.subscription {
+    width: 100%;
+    height: 500px;
+    background: #D9D9D9; 
+    @media only screen and (max-width: 414px) {
+      height: 300px;
+    }
+   .containerCarousel {
+       max-width: 1200px;
+       height: 500px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       @media only screen and (max-width: 1024px) {
+         max-width: 700px;
+       }
+      @media only screen and (max-width: 414px) {
+       max-width: 278px;
+       height: 300px;
+      }
+    }
+ }
+ 
+ .subscription-text {
+   margin-bottom: 20px;
+   @media screen and (max-width: 414px) {
+    margin-bottom: 5px;
+    }
+     p {
+     @include mainText;
+     margin-bottom: 70px; 
+     @media screen and (max-width: 414px) {
+     font-size: 18px;
+     line-height: 23px;
+     text-align: center;
+     margin-bottom: 35px;
+    }
+   }
+ 
+   .owl-carousel {
+     max-width: 1400px;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 0 auto;
+     margin-bottom: 80px;
+     background: #D9D9D9; 
+     
+     @media only screen and (max-width: 1440px) {
+         width: 100%;
+     }
+     @media only screen and (max-width: 1024px) {
+         width: 100%;
+     }
+     @media only screen and (max-width: 414px) {
+         max-width: 273px;
+         height: auto; 
+     }
+   }
+ }
+ 
+ .carousel-slider {
+    width: 100%;
+    background-color: #D9D9D9;
+    @media only screen and (max-width: 414px) {
+       max-width: 200px;
+       margin: 0 auto; 
+    }
+ }
+ 
+ .box-area {
+   background: #D9D9D9;
+   margin: 0 auto;
+   @media only screen and (max-width: 414px) {
+     max-width: 190px;
+     margin: 0 auto; 
+  }
+ }
+    
+ .subscription-1_card, .subscription-2_card, .subscription-3_card {
+       width: 320px;
+       height: 304px;
+       border: 1px solid $mainColor;
+       border-radius: 5px;
+       margin-right: 10px; 
+       background: #d7d0d0;
+       @media only screen and (max-width: 414px) {
+         width: 191px;
+         height: 181px;
+         margin: 5px auto;
+       }
+ }
+ 
+ .subscription-1_card, .subscription-2_card, .subscription-3_card {
+      position: relative;
+      padding: 20px;
+      @media only screen and (max-width: 414px) {     
+       padding: 20px;
+   }
+      .price {
+       font-weight: 700;
+       font-size: 40px;
+       line-height: 52px;
+       margin-left: 200px;
+       top: 60px;
+       color: $mainColor;
+       margin-bottom: 30px;
+       @media only screen and (max-width: 414px) {     
+         font-size: 19.5px;
+         line-height: 25px;
+         margin-left: 10px;
+         margin-bottom: 5px;
+        text-align: right;
+     }
+   }
+     .trial {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      color: $mainColor;
+      @media only screen and (max-width: 414px) {     
+        font-size: 11.7px;
+        line-height: 15px;
+        color: $mainColor;
+        text-align: left;
+       }
+     }
+     .description {
+      width: 255px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      color: #000000;
+      opacity: 0.5;
+      @media only screen and (max-width: 414px) {  
+        width: 150px;   
+        font-size: 11.7089px;
+        line-height: 128%;
+        text-align: left;
+      }
+   }
+   .elips-orange {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    img {
+     width: 60px;
+     height: 59px;
+     border-radius: 50%;
+     @media only screen and (max-width: 414px) { 
+      //width: 100%; 
+      width: 29px;
+      height: 28px;
+      border-radius: 50%;
+    }
+   }  
+  }
+}
+
+
+ 
+     #carousel-2 .owl-nav {
+       position: absolute;
+       top: 50%;
+       width: 100%;
+       @media only screen and (max-width: 1024px) {
+         width: 900px;
+       }
+       @media only screen and (max-width: 414px) {
+         width: 120px;
+       }
+     }
+ 
+     #carousel-2 .owl-prev, #carousel-2 .owl-next {
+       width: 60px;
+       height: 60px;
+       line-height: 60px;
+       color: $mainColor;
+       position: absolute;
+     }
+     #carousel-2 .owl-prev {
+       left: -130px;
+       top: -30px;
+       @media only screen and (max-width: 1024px) {
+         left: 100px;
+         top: -30px;
+     }
+       @media screen and (max-width: 414px) {
+         left: -70px;
+         top:  -35px;
+       }
+     }
+     #carousel-2 .owl-next {
+       right: -120px;
+       top: -30px;
+       @media only screen and (max-width: 1024px) {
+         right: 20px;
+         top: -30px;
+     }
+       @media screen and (max-width: 414px) {
+         right: -140px;
+         top: -35px;
+         }
+     }
+     @media only screen and (max-width: 1024px) {
+      .card {
+         text-align: center; 
+       }
+       .owl-nav {
+         display: none;
+          @media screen and (max-width: 414px) {
+            display: block;
+            position: absolute;
+            top: 50px;
+            }
+       }
+     }
+   
+ 

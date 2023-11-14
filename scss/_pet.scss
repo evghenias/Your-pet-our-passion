@@ -1,0 +1,274 @@
+/*======================================================================================== section yourPet ==========================================================================*/
+.pet {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+     }
+     @media screen and (max-width: 1259px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+     }
+     @media screen and (max-width: 1174px) {
+        width: 100%;
+     }
+      @media screen and (max-width: 1024px) {
+        margin: 15px auto;
+        margin-top: 20px; 
+        width: 100%; 
+    }
+     @media screen and (max-width: 768px) {
+        width: 100%;
+     }
+     @media screen and (max-width: 414px) {
+        width: 100%;
+        margin: 0;
+      }
+}
+
+.yourPet-text {
+    width: 500px;
+    padding: 250px 20px 20px 20px;
+    @media screen and (max-width: 1440px) {
+      padding: 210px 0px 10px 80px;
+   }
+   @media screen and (max-width: 1191px) {
+      width: 100%;
+      padding: 80px 10px 10px 80px;
+      margin-bottom: 30px;
+   }
+    @media screen and (max-width: 1024px) {
+      max-width: 600px;
+      padding: 0px;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 31px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 60px;
+      @media screen and (max-width: 880px) {
+         width: 880px;
+         margin: 50px auto;
+      }
+      @media screen and (max-width: 768px) {
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+    }
+      @media screen and (max-width: 414px) {
+         width: 280px;
+         font-size: 13px;
+         padding-top: 5px;
+         padding-left: 0;
+         margin: 0px;
+         text-align: left;
+         margin-bottom: 20px;
+      }  
+   }
+    p {
+       @include pText;
+        margin-bottom: 20px;
+        @media screen and (max-width: 414px) {
+            font-size: 13px;
+            line-height: 17px;
+            font-weight: 300;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+    } 
+    
+    .yourText-button {
+       @include button;
+       margin-top: 40px;
+       @include ordinaryText;
+       color: $mainColor;
+       @media screen and (max-width: 1024px) {
+         margin: 0 auto;
+      }
+       @media screen and (max-width: 414px) {
+        height: auto;
+        margin-top: 10px;
+       }
+    }
+}
+
+.yourPet-photo {
+    max-width: 1010px;
+    position: relative;
+    margin-left: 185px;
+    z-index: 1;
+    @media screen and (max-width: 1440px) {
+      max-width: 900px;
+      margin-left: 90px;
+    }
+    @media screen and (max-width: 1191px) {
+       margin: 50px auto;
+       padding-bottom: 20px;
+     }
+  
+    img {
+       max-width: 100%;
+       @media screen and (max-width: 1440px) {
+        width: 90%;
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+        }
+           @media screen and (max-width: 971px) {
+            width: 100%;
+        }  
+        @media screen and (max-width: 525px) {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+         }
+         @media screen and (max-width: 414px) {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+        }
+       }
+    }    
+}
+
+.yourPet-text_position {
+    width: 1430px;
+    height: 253px;
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    left: 180px;
+    padding: 10px;
+    @media screen and (max-width: 1440px) {
+        max-width: 1000px;
+        height: 180px;
+        top: 200px;
+        left: 140px;
+    }
+    @media screen and (max-width: 1174px) {
+        width: 860px;
+        height: 140px;
+        top: 900px;
+        left: 140px; 
+     }
+     @media screen and (max-width: 1024px) {
+        width: 800px;
+        top: 850px;
+        left: 90px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+     }
+    @media screen and (max-width: 1191px) {
+       max-width: 1000px;
+       height: 140px;
+     }
+     @media screen and (max-width: 768px) {
+      max-width: 500px;
+      height: 140px;
+      margin-bottom: 0px;
+   }
+     @media screen and (max-width: 414px) {
+        width: 280px;
+        height: 35px;
+        top: 350px;
+        left: 60px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    } 
+    .black-word {
+     @include word;
+     @media screen and (max-width: 1440px) {
+      font-size: 84px;
+      line-height: 117.7px;
+      }
+      @media screen and (max-width: 1024px) {
+         font-size: 60px;
+         line-height: 97.7px;
+     }
+     @media screen and (max-width: 768px) {
+      font-size: 50px;
+      line-height: 77.7px;
+    }
+    @media screen and (max-width: 414px) {
+      font-size: 25px;
+      line-height: 35px;
+      margin-right: 10px;
+   }
+}
+   .orange-word {
+      @include word;
+      margin-right: 0px;
+      color: $mainColor;
+      @media screen and (max-width: 1440px) {
+         font-size: 84px;
+         line-height: 117.7px;
+     }
+     @media screen and (max-width: 1024px) {
+      font-size: 60px;
+      line-height: 97.7px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
+      line-height: 77.7px;
+   }
+    @media screen and (max-width: 414px) {
+      font-size: 25px;
+      line-height: 35px;
+   }
+}
+   .change-word{
+      @include word;
+      color: $secondColor;
+      @media screen and (max-width: 1440px) {
+         font-size: 84px;
+         line-height: 117.7px;
+     }
+     @media screen and (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 97.7px;
+        color: $mainColor;
+      }
+      @media screen and (max-width: 768px) {
+         font-size: 50px;
+         line-height: 77.7px;
+      }
+      @media screen and (max-width: 414px) {
+         font-size: 25px;
+        line-height: 35px;
+        margin-right: 0px;
+      }
+   }
+}
+ 
+.border-line {
+   width: 100%;
+   border: 1px solid $mainColor;
+   margin-top: 50px;
+   margin-bottom: 60px;
+   @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+   @media screen and (max-width: 414px) {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+

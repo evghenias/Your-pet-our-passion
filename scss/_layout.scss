@@ -1,107 +1,113 @@
-/*section "_layout" include grid sistem of each section of layout*/
 
-/*-----------------------------------------Header-------------------------------------*/
-.main-container {
-    max-width: 1920px;
-    background-color: #D9D9D9;
-    border-radius: 30px;
-    padding-top: 30px;
-}
-
-.cont {
-   width: 1570px;
-   margin: 0 auto;
-}
-
-.header {
- width: 100%;
- height: 40px;
- margin-bottom: 40px;
- 
-}
-
-nav {
-   height: 40px;
-   display: flex;
-   flex-direction: row;
-   padding: 0;
-   margin: 0;
-
-   a {
-     padding: 0
-}
-   .logo {
-      @include mainLogo;
-      margin: 0px;
-      width: 278px;
-      margin-left: 90px;
-    }
-}
-
-.navbar-brand {
-     margin-left: 100px;
-     form {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        height: 40px;
-        padding: 0;
-        margin: 0;
-      }
-    }
-
-.aria-label {
-     width: 424px;
-     height: 50px;
-}
-    .signIn {
-       width: 220px;
-       height: 20px;
-       text-align: center;
-       border: none;
-    }
-
-    .block {
-      width: 100%;
-      height: 1px;
-    }
-/*====================================== carausel ==================*/
-.carousel {
+/*=============================================================================================== carausel ==================================================================================*/
+.carousel-1 {
+    height: 595px;
     margin-bottom: 80px;
+    @media screen and (max-width: 414px) {
+       margin-bottom: 40px;
+       height: 337px;
+    }
 }
 
-/*==================================== form =================*/
+/*================================================================================================== form ===================================================================================*/
 .form {
-   width: 100%;
+   max-width: 2040px;
    height: 285px;
-   padding: 100px 0 20px 0;
+   padding: 100px 25px 20px 25px;
    background-color: $mainColor;
    margin-bottom: 120px;
+   @media screen and (max-width: 1440px) {
+      width: 100%;
+    }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+   }
+  @media screen and (max-width: 778px) {
+    width: 100%;
+    height: 200px;
+    padding: 50px 0 20px 0;
+ }
+   @media screen and (max-width: 414px) {
+    width: 100%;
+    height: 82px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+   .containerM {
+     width: 1240px;
+     display: flex;
+     justify-content: center;
+    
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 414px) {
+        max-width: 380px;
+        padding: 20px 10px 20px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
 }
 
-
-/*============================  pracing =====================*/
+/*==============================================================================================  pracing ===============================================================================*/
 
 .pracing {
-    width: 1339px;
-    height: 1363px;
+    max-width: 1339px;
+   // height: 1363px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 414px) {
+        width: 288px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
 }
 
-.pracing-offers {
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+.pracing-wrap {
+    max-width: 1339px;
     margin: 0 auto;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 414px) {
+        width: 288px;
+        margin: 0 auto;
+    }
 }
 
-    /* ==================================== subscription =====================*/
+/* ============================================================================================= subscription ======================================================================================*/
 
-    /* ====================================  footer ===============================*/
+.subscription {
+   max-width: 1920px;
+   margin: 0 auto;
+   @media screen and (max-width: 414px) {
+    width: 274px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 240px;
+   }
+}
+
+/* =================================================================== footer ==========================================================*/
 
 .footer {
    width: 100%;
    height: 157px;
    background-color: $mainColor;
+   @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+   @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+   }
 }    

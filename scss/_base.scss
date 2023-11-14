@@ -1,52 +1,212 @@
-$mainColor: #CD5B25;
 
-@mixin mainLogo {
-    font-family: K2D;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3c ease-in-out;
+  
+  //overflow-x: hidden;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+$mainColor: #CD5B25;
+$mainColorDarker: #bc5525;
+$secondColor: #D9D9D9;
+
+.wrapperM {
+    max-width: 1920px;
+    border-radius: 30px;
+    padding-top: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: #D9D9D9;
+    @media screen and (max-width: 1570px) {
+       width: 100%;
+    }
+    @media screen and (max-width: 1425px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 414px) {
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+main {
+    width: 100%;
+    //min-height: 2140px;
+}
+
+.containerM {
+    width: 1570px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    @media screen and (max-width: 1425px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+   
+    @media screen and (max-width: 971px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 752px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 525px) {
+        width: 100%;
+        margin: 0px auto;
+     }
+    @media screen and (max-width: 414px) {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+.wrapperH {
+    //max-width: 1920px;
+    //padding: 60px 80px 0px 150px;
+    max-width: 1602px;
+    margin: 0 auto;
+    background-color: $secondColor;
+ }
+ 
+
+@mixin logo {
+    font-family: 'K2D';
     font-size: 50px;
     font-weight: 700;
     line-height: 65px;
-    text-align: left; 
+    letter-spacing: 0em;
+    text-align: left;
     color: rgb(16, 15, 15);   
+ }
+ 
+ @mixin pText {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
 }
 
-@mixin ordinaryText {
-    font-family: 'K2D';
-    font-style: normal;
-    font-weight: 300;
+ @mixin ordinaryText {
+     font-family: 'K2D';
+     font-style: normal;
+     font-weight: 300;
+     font-size: 24px;
+     line-height: 34px;
+     color: #2c2b2b;
+ }
+ 
+ @mixin mainText {
+     font-family: 'K2D';
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 47px;
+     letter-spacing: 0em;
+     text-align: center;
+     color: $mainColor;    
+ }
+ 
+ @mixin h1 {
+     font-family: 'K2D';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 113.682px;
+     line-height: 148px;
+     display: flex;
+     align-items: center;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #000000;
+ }
+
+ @mixin p {
     font-size: 26px;
     line-height: 34px;
-    color: #000000;
+    font-weight: 300;
+    color: #000;
 }
 
-@mixin mainText {
+@mixin price {
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: $mainColor;
+}
+ 
+ @mixin button {
+     box-sizing: border-box;
+     width: 280px;
+     height: 78px;
+     left: 177px;
+     top: 640px;
+     border: 2px solid #CD5B25;
+     border-radius: 10px;
+ }
+
+ @mixin word {
     font-family: K2D;
-    font-size: 36px;
+    font-size: 114px;
     font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: $mainColor;    
-}
-
-@mixin h1 {
-    font-family: 'K2D';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 113.682px;
-    line-height: 148px;
-    display: flex;
-    align-items: center;
+    line-height: 147.7px;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #000000;
+    text-align: left;
+    margin-right: 35px;
 }
 
-@mixin button {
-    box-sizing: border-box;
-    width: 280px;
-    height: 78px;
-    left: 177px;
-    top: 640px;
-    border: 2px solid #CD5B25;
-    border-radius: 10px;
+
+
+.none {
+    display: none !important;
 }
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+@media (max-width:1570px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.block {
+    width: 100%;
+    height: 1px;
+  }

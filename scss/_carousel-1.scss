@@ -1,0 +1,181 @@
+
+/*================================================================================================ section carausel-1 ========================================================================*/
+.carousel-1 {
+    max-width: 1564px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;  
+    margin-bottom: 80px;
+    background: #D9D9D9;
+    @media only screen and (max-width: 1440px) {
+		width: 100%;
+	}
+    @media only screen and (max-width: 1024px) {
+		width: 100%;
+	}
+    @media only screen and (max-width: 414px) {
+        width: 278px;
+        height: 340px;
+        margin-bottom: 0px;
+	}
+}
+
+.owl-carousel {
+   width: 100%;
+   background-color: #D9D9D9;
+   @media only screen and (max-width: 414px) {
+      width: 180px;
+      max-height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+.carousel-text {
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (max-width: 414px) {
+        margin-bottom: 40px;
+    }
+    .p-orange {
+        @include mainText;
+        @media screen and (max-width: 414px) {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: $mainColor;
+            margin-bottom: 5px;
+         }
+    }
+    .p-black {
+       @include ordinaryText;
+        margin-bottom: 20px;
+       @media screen and (max-width: 414px) {
+            font-size: 13px;
+            line-height: 14px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.rowC {
+  max-width: 1564px;
+  margin: 0 auto;
+  background-color: #D9D9D9;
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 414px) {
+    width: 100%;
+ }
+
+ .testimonial_area {
+     width: 100%;
+     background-color: #D9D9D9;
+    @media only screen and (max-width: 414px) {
+        width: 250px;
+    }
+  }
+}
+
+.box-area {
+  background: #D9D9D9;
+  margin: 0 auto;
+}
+
+.owl-item {
+    padding-right: 40px;
+}
+
+.cardM {
+    width: 289px;
+    background: #D9D9D9;
+    @media screen and (max-width: 414px) {
+       width: 290px;
+       margin: 5px auto;
+    }
+    img {
+        height: 274px;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        @media only screen and (max-width: 414px) {
+            width: 158px;
+            height: 150px;
+            margin: 0px auto;
+        }
+    }
+    display: block;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 414px) {
+		    width: 200px;
+        margin: 0 auto;
+	}
+    .button-card {
+      width: 275px;
+      height: 54px;
+      border-radius: 9px;
+      border: 1px solid $mainColor;
+      font-weight: 500;
+      font-size: 26px;
+      color: $mainColor;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color: #D9D9D9;
+      @media screen and (max-width: 414px) {
+        width: 158px;
+        height: 23px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 17px;
+        text-align: center;
+      }
+    } 
+}
+
+#testimonial_area .owl-nav {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+  background-color: #D9D9D9;
+}
+#testimonial_area .owl-prev, #testimonial_area .owl-next {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: $mainColor;
+	position: absolute;
+}
+#testimonial_area .owl-prev {
+	left: -60px;
+	top: -30px;
+  @media screen and (max-width: 414px) {
+    left: -40px;
+    top: -30px;
+}
+}
+#testimonial_area .owl-next {
+	right: -20px;
+	top: -30px;
+  @media screen and (max-width: 414px) {
+    right: -35px;
+    top: -30px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+	.card {
+		text-align: center;
+    background: #D9D9D9;
+	}
+	.owl-nav {
+		display: none;
+        @media screen and (max-width: 414px) {
+            display: block;
+            position: absolute;
+           top: 50px;
+        }
+	}
+}

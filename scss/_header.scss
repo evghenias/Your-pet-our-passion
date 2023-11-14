@@ -1,0 +1,395 @@
+.header-header {
+    border:  1px solid $mainColor;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 60px;
+    height: 39px;
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+       // margin: 40px auto;
+        border: none;
+     }
+     @media screen and (max-width: 525px) {
+        width: 100%;
+     }
+     @media screen and (max-width: 414px) {
+       width: 100%;
+       margin-bottom: 10px;
+    }
+ }
+
+.header-row-header {
+    max-width: 1570px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 39px;
+    @media screen and (max-width: 1570px) {
+        width: 100%;
+     }
+     @media screen and (max-width: 1440px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 38px;
+     }
+     @media screen and (max-width: 1024px) {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+     }
+     @media screen and (max-width: 525px) {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+        margin: 0px auto;
+     }
+     @media screen and (max-width: 414px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .header-logo_p, .footer-logo_p {
+        @include logo;
+        padding-top: 8px;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 150px;
+        @media screen and (max-width: 1440px) {
+            margin-right: 30px;
+         }
+         @media screen and (max-width: 1024px) {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+        @media screen and (max-width: 414px) { 
+         font-size: 20px;
+         line-height: 26px;
+         justify-content: space-between;
+         margin: 0;
+        }
+    }
+    .navigation-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 650px;
+        @media screen and (max-width: 1570px) {
+            margin-right: 300px;
+         }
+        @media screen and (max-width: 1440px) {
+            margin-bottom: 25px;
+            margin-right: 30px;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
+    }
+}
+
+.header-form {
+   display: flex;
+   align-items: center;
+   width: 424px;
+   height: 38px;
+   border: 1px solid $mainColor;
+   border-radius: 3.9px;
+   margin-top: -1px;
+}
+
+.healthy-pets {
+    font-family: 'K2D';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14.0287px;
+    line-height: 18px;
+    color: #CD5B25;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    margin-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+form {
+    input {
+        @include logo;
+        font-size: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: inherit;
+    }
+}
+  .btn-form {
+     width: 50.6px;
+     height: 37.2px;
+     border: 1px solid $mainColor;
+     border-radius: 3.9px;
+     position: relative;
+     margin-left: 15px;
+     margin-top: -26px;
+     margin-bottom: -25px;
+
+     .elips {
+      position: absolute;
+      width: 16px;
+      height: 15px;
+      left: 18px;
+      top: 4px;
+    }
+     
+}
+
+.signIn> * + * {
+    margin-left: 15px;
+    @media screen and (max-width: 1440px) {
+        margin-left: 0px;
+    }
+}
+
+.header-login a {
+    @include logo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: #000;
+    margin-top: 0;
+    @media screen and (max-width: 1440px) {
+        //align-items: center;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: 1024px) {
+        align-items: center;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: 414px) {
+        display: none;
+        margin-bottom: 200px;
+    }
+}
+
+/* ==================================================  mobile-nav-buttons ==================*/
+
+.mobile-nav-button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+    position: relative;
+    z-index: 999;
+    width: 25px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    @media screen and (max-width: 414px) {
+        display: flex;
+    }
+}
+
+///////////
+ 
+.mobile-nav-button__icon {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+    left: 0;
+    top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+    left: 0;
+    top: 10px;
+}
+
+.mobile-nav-button__icon.active {
+    background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+
+/*=============================================================== mobile-nav ====================================*/
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    //width: 100%;
+    height: 700px;
+    //background: hsla(0, 0%, 100%, 1);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 20px 40px 20px;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (max-width: 414px) {
+      padding-top: 80px;
+    }
+
+    .mobile-nav-list {
+       @media screen and (max-width: 414px) {
+        //width: 280px;
+       width: 360px;
+       height: 400px;
+       margin: 20px auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       padding: 40px;
+       background: #f9f1f1ea;
+    }
+}
+    .header-logo_p {
+       font-size: 60px;
+       font-weight: 400;
+       line-height: 35px;
+       color: #000;
+       margin-bottom: 50px;
+       @media screen and (max-width: 414px) {
+         margin-bottom: 30px;
+      }
+    }
+    .navigation-form {
+        width: 280px;
+        height: 520px;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: 414px) {
+         justify-content: center;
+         margin: 0 auto;
+        }
+    }
+    .header-form {
+         width: 280px;
+         height: 180px;
+         border: none;
+         border-bottom: 2px solid $mainColor;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-bottom: 35px;
+    }
+    .healthy-pets {
+       width: 280px;
+       font-size: 34px;
+       font-weight: 500;
+       text-align: center;
+       padding-top: 25px;
+       padding-bottom: 20px;
+    }
+    form {
+        width: 100%;
+        height: 50px;
+        flex-direction: column;
+        margin-bottom: 20px;
+      input {
+        font-size: 26px;
+        font-weight: 400;
+        text-align: center;
+        padding-right: 10px
+      }
+    }
+    .btn-form {
+       width: 100px;
+       height: 60px;
+       position: relative;
+    }
+    .elips {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 35px;
+        top: 9px;
+      } 
+      .signIn {
+        margin-top: 70px;
+        @media screen and (max-width: 414px) {
+           margin-top: 10px;
+           margin-bottom: 10px;
+        }
+    }    
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+.mobile-nav-list {
+    height: 350px;
+}
+
+.mobile-nav-list a{
+    font-size: 22px;
+    color: #000;
+}
+
+.mobile-nav-list li + li {
+    margin-top: 10px;
+}
+
+.mobile-login a{
+    color: #000;
+} 
+
+.mobile-login {
+    @include logo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: #000;
+    @media screen and (max-width: 414px) {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        top: 30px;
+     }
+}
+
+.mobile-login > * + * {
+   margin-left: 30px;
+}
+
+
+
+

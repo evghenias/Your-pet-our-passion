@@ -1,0 +1,356 @@
+
+/* ======================================================================================= section pricing ==========================================================================*/
+.pracing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 414px) {
+         width: 288px;
+         text-align: center;
+    }
+
+   .p-orange {
+      @include mainText;
+      color: $mainColor;
+      margin-bottom: 10px;
+      @media screen and (max-width: 414px) {
+        width: 288px;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+      }
+   }
+  .p-black {
+     @include ordinaryText;
+     text-align: center;
+     margin-bottom: 35px;
+     font-size: 25px;
+     @media screen and (max-width: 414px) {
+      width: 288px;
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+ }
+}
+
+.pracing-offers {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+     max-width: 950px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+ }
+  @media screen and (max-width: 414px) {
+     max-width: 288px;
+  }
+}
+
+.offer-1 {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+      max-width: 950px;
+   }
+   @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } 
+  @media screen and (max-width: 414px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  .num_text1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      @media screen and (max-width: 414px) {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+      }
+      .offer-1_number {
+          width: 63px;
+          height: 143px;
+          margin-top: 50px;
+          margin-right: 50px;
+          @media screen and (max-width: 414px) {
+            width: 26.8px;
+            height: 61px;
+            margin-top: -30px;
+            font-weight: 700;
+            font-size: 59.7px;
+            line-height: 77.6px;
+            margin-right: 20px;
+          }
+      }
+   }
+} 
+
+.offer-2 {
+  width: 1150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  @media screen and (max-width: 1024px) {
+      max-width: 950px;
+   }
+   @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 30px;
+}
+  @media screen and (max-width: 414px) {
+      max-width: 288px;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+  }
+  .num_text2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @media screen and (max-width: 414px) {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;     
+          margin: 0 auto;
+      }
+      .offer-2_number {
+         width: 90px;
+         height: 143px;
+         margin-top: 50px;
+         margin-right: 40px;
+         @media screen and (max-width: 414px) {
+            width: 37px;
+            height: 61px;
+            margin-top: -35px;
+            margin-right: 50px;
+            font-weight: 700;
+            font-size: 59.7px;
+            line-height: 77.6px;
+          }
+        }
+        .offer-2_text {
+          width: 449px;
+          padding: 5px;
+        p {
+          width: 460px;
+          text-align: left;
+         @include ordinaryText;
+         font-size: 25px;
+         @media screen and (max-width: 414px) {
+          width: 217px;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 128%;
+          margin-left: -30px;
+         }
+        }
+      }  
+  }
+}
+
+.offer-3 {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+      max-width: 950px;
+   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } 
+  @media screen and (max-width: 414px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  .num_text3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @media screen and (max-width: 414px) {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          margin: 0 auto;
+      }
+  .offer-3_number {
+      width: 95px;
+      height: 143px;
+      margin-top: 50px;
+      margin-right: 40px;
+      @media screen and (max-width: 414px) {
+          width: 37px;
+          height: 61px;
+          margin-top: -40px;
+          font-weight: 700;
+          font-size: 59.7px;
+          line-height: 77.6px;
+          margin-right: 20px;
+      }
+  }
+}
+}
+
+.offer-1, .offer-2, .offer-3 {
+ margin-bottom: 60px;
+ @media screen and (max-width: 414px) {
+   margin-bottom: 30px;
+ }
+}
+
+.offer-1_text {
+  width: 449px;
+  padding: 5px;
+  p {
+    width: 460px;
+    text-align: left;
+    @include ordinaryText;
+    font-size: 25px;
+    @media screen and (max-width: 414px) {
+      width: 217px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 128%;
+    }
+  }
+}
+
+.offer-1_card, .offer-2_card, .offer-3_card{
+  width: 325px;
+  height: 309px;
+  border: 2px solid $mainColor;
+  padding: 25px 15px 20px 15px;
+  border-radius: 5px;
+  @media screen and (max-width: 414px) {
+      max-width: 157px;
+      height: 149.2px;
+      padding: 10px;
+      margin: 20px auto;
+  }
+  .price {
+     margin: 5px;
+     display: flex;
+     justify-content: flex-end;
+     margin-bottom: 25px;
+     @media screen and (max-width: 414px) {
+      width: 56.2px;
+      height: 28px;
+      font-size: 19.3px;
+      line-height: 25.1px;
+      margin-left: 60px;
+     }
+  }
+  .trial {
+     font-family: 'K2D';
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 31px;
+     color: #CD5B25;
+     padding-left: 15px;
+     margin-top: 35px;
+     @media screen and (max-width: 414px) {
+      font-size: 11.5px;
+      font-weight: 700;
+      line-height: 15.07px;
+      margin-top: 20px;
+  }
+  }
+  .description {
+      font-family: "K2D";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 31px;
+      letter-spacing: -0.05em; 
+      color: #605e5e;
+      @media screen and (max-width: 414px) {
+          font-weight: 300;
+          font-size: 11.5938px;
+          line-height: 128%;
+          opacity: 0.5;
+      }
+  }
+  .offer-1_card, .offer-2_card, .offer-3_card{
+     position: relative;
+  }
+  .elips-orange {
+      display: flex;
+      justify-content: flex-end;
+      width: 60px;
+      height: 59px;
+     position: absolute;
+     margin-left: 230px;
+     img {
+     width: 100%;
+     border-radius: 50%;
+    }
+  }
+}
+
+.offer-1_card {
+  @media screen and (max-width: 414px) {
+      width: 288px;
+      margin: 0 auto;
+  }
+}
+
+.offer-2_card {
+  margin-right: 120px;
+  @media screen and (max-width: 1024px) {
+      margin-right: 60px;
+      margin-left: -30px;
+   }
+   @media screen and (max-width: 768px) {
+    margin-right: 40px;
+    margin-left: 180px;
+   }
+  @media screen and (max-width: 414px) {
+      width: 288px;
+      margin: 0 auto;
+  } 
+}
+
+.offer-3_card {
+   margin-left: 110px;
+   @media screen and (max-width: 768px) {
+    margin-right: 40px;
+    margin-left: 30px;
+   }
+   @media screen and (max-width: 414px) {
+      width: 288px;
+      margin: 0 auto;
+  } 
+}
